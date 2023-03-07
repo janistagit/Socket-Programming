@@ -6,7 +6,7 @@ serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName, serverPort))
 
-sentence = raw_input("Input lowercase sentence:")
+sentence = input("Input lowercase sentence:")
 
 clientSocket.send(sentence.encode())
 modifiedSentence = clientSocket.recv(1024)
