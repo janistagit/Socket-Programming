@@ -7,6 +7,7 @@ serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName, serverPort))
 
+print(sys.argv[1])
 file = sys.argv[1]
 
 clientSocket.send(file.encode())
